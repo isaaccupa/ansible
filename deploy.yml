@@ -9,4 +9,4 @@
       dest: /home/adtsys/docker-php/public
       clone: yes
       version: master
-        
+      force: yes
