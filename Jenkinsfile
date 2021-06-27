@@ -17,6 +17,7 @@ pipeline {
         echo "Initiating Deploy."
         sh 'ls -l'
         sh 'pwd'
+        sh 'whoami'
         ansiColor('xterm') {
           ansiblePlaybook (
             colorized: 'true',
