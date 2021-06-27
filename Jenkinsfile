@@ -8,24 +8,19 @@ pipeline {
       steps {
         echo '> Checking out the Git version control ...'
         checkout scm
-        sh 'ls -l'
-        sh 'pwd'
       }
     }
     stage("deploy") {
       steps {
         echo "Initiating Deploy."
-        sh 'ls -l'
-        sh 'pwd'
-        sh 'whoami'
         ansiColor('xterm') {
           ansiblePlaybook (
             colorized: 'true',
             disableHostKeyChecking: true,
             forks: 100,
             installation: 'Ansible',
-            inventory: './hosts',
-            playbook: './deploy.yml'
+            inventory: 'hosts',
+            playbook: 'deploy.yml'
           )
         }
       }
