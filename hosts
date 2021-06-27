@@ -1,0 +1,6 @@
+[all:vars]
+ansible_connection=ssh
+ansible_user=adtsys
+
+[php]
+10.0.2.4
