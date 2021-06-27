@@ -24,8 +24,8 @@ pipeline {
             disableHostKeyChecking: true,
             forks: 100,
             installation: 'Ansible',
-            inventory: 'hosts',
-            playbook: 'deploy.yml'
+            inventory: './hosts',
+            playbook: './deploy.yml'
           )
         }
       }
