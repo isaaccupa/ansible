@@ -1,11 +1,12 @@
- --- 
+--- 
+- name: deploy php
   hosts: php
   gather_facts: no
   tasks:
-    - name: Clone adtsys repo
-      git:
-        repo: 'https://github.com/isaaccupa/adtsys.git'
-        dest: /home/adtsys/docker-php/public
-        clone: yes
-        version: master
+  - name: Clone adtsys repo
+    git:
+      repo: 'https://github.com/isaaccupa/adtsys.git'
+      dest: /home/adtsys/docker-php/public
+      clone: yes
+      version: master
         
