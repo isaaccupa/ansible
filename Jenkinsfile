@@ -8,8 +8,8 @@ pipeline {
       steps {
         echo '> Checking out the Git version control ...'
         checkout scm
-        ls -l
-        pwd
+        sh 'ls -l'
+        sh 'pwd'
       }
     }
     stage("deploy") {
