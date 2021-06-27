@@ -1,0 +1,6 @@
+- git:
+    repo: 'https://github.com/isaaccupa/adtsys.git'
+    dest: /home/adtsys/docker-php/public
+    clone: yes
+    version: master
+    
