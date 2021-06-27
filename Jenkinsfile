@@ -15,6 +15,8 @@ pipeline {
     stage("deploy") {
       steps {
         echo "Initiating Deploy."
+        sh 'ls -l'
+        sh 'pwd'
         ansiColor('xterm') {
           ansiblePlaybook (
             colorized: 'true',
